@@ -22,7 +22,7 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
-           az cdn endpoint purge --content-paths  "/*" --profile-name https://wamydevops001.z1.web.core.windows.net --name https://wamydevops001.azureedge.net --resource-group research
+           az cdn endpoint purge --content-paths  "/*" --profile-name devops001-cdn --name https://wamydevops001.azureedge.net --resource-group research
 
   # Azure logout
     - name: logout
